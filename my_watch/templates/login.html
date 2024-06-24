@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login || Form</title>
+    <link rel="stylesheet" href="static/asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/asset/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row mt-3 home-icon">
+            <div class="col-md-3">
+                <a href="/" class="anchor"><i class="fa-solid fa-house"></i></a>
+            </div>
+        </div>
+        <div class="row div-box">
+
+            <div class="col-md-3 shadow mt-5 div-box1">
+                <span class="div-span"><span>Login</span></span>
+                <p class=""><span>Get access to your Orders, Wishlist and Rcommnedations</span></p>
+            </div>
+
+            <div class="col-md-4 shadow mt-5 ">
+                {% if errmsg %}
+                <div class="alert alert-danger">
+                    {{errmsg}}
+                </div>
+                {% endif %}
+                <form method="POST" action="/login">
+                    {% csrf_token %}
+                    <div class="mb-3 mt-3">
+                        <input  name="uname" type="email" class="form-control" id="input1"
+                            placeholder="Enter Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <input name="upass" type="password" class="form-control" id="input2" placeholder="Password">
+                    </div>
+
+                    <div class="mb-3 div-tp ">
+                        By continuing, you agree Mechanical Store
+                        <a href="#" class="anchor">Terms of use</a>
+                        and
+                        <a href="#" class="anchor">Privacy Policy</a>
+                        .
+                    </div>
+
+                    <div class="mb-3 col-md-12 border shadow div-register  ">
+                        <!-- <button type="submit" class="next-a anchor "> <span>Register</span></button> -->
+                        <!-- <a class="next-a anchor " href="#">login</a> -->
+                        <input type="submit" class="next-a anchor " value="Login">
+                    </div>
+                    {% if success %}
+                    <div class="alert alert-success">
+                        {{success}}
+                    </div>
+                    {% endif %}
+
+                    <div class="mb-3 border shadow div-login">
+                        New to Mechanical Store?
+                        <a class="anchor" href="/register">Create Account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="static/asset/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

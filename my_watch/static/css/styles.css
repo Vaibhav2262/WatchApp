@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.nav-item {
+    border: 0.1px solid transparent;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    border: 0.1px solid rgb(74, 31, 31);
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding: 0px !important;
+}
+
+.navbar-brand img {
+    height: 20px;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    text-align: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 20px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.nav-item span {
+    font-size: 0.70rem;
+    font-weight: 500;
+}
+
+/*----------- Banner Sections -------------*/
+
+#banner {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+    padding-top: 2%;
+}
+
+.bottom-img {
+    width: 100%;
+
+}
+
+/*------------Footer section section-------------*/
+#footer {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #fff;
+}
+
+.footer-img {
+    width: 100%;
+}
+
+.footer-box {
+    padding: 20px;
+}
+
+.footer-box img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-box .bi {
+    margin-right: 10px;
+    font-size: 25px;
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.footer-box .form-control {
+    box-shadow: none;
+    border: none;
+    border-radius: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn-primary {
+    box-shadow: none;
+    border: none;
+    border-radius: 25px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.footer-box a {
+    text-decoration: none;
+}
+
+hr {
+    background-color: #fff;
+}
+
+.copyright {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* Social media */
+
+
+
+
+.social-icons img {
+    width: 80px;
+    transition: 0.8s;
+}
+
+.social-icons a:hover img {
+    transform: translate(-30px);
+}
+
+.b {
+    font-size: 20px;
+}
+
+
+/**---------------- main section-------------------------------   **/
+
+.main .hero-section {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 15px rgba(233, 141, 208, 0.2)
+}
+
+/***** Filter section *******/
+
+.fbody{
+    background: rgb(241, 249, 251);
+    margin-top: 15px;
+    margin-left: 25px;
+   
+    border-radius: 5px;
+}
+
+.main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main p a {
+    color: rgb(115, 149, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 1px rgb(0, 136, 255);
+}
+
+.main div p strong {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px rgb(0, 136, 255);
+}
+
+.main .button {
+    color: rgb(73, 205, 106);
+    background-color: rgb(251, 230, 230);
+    border-radius: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: rgb(111, 97, 90);
+    text-shadow: 0px 0px 1px red;
+}
+
+.b {
+    border-radius: 10px;
+    border: 2px solid  rgb(116, 134, 191);;
+}

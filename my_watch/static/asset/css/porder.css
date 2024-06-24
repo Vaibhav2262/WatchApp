@@ -1,0 +1,64 @@
+
+
+/*------  customer details    --------*/
+#order h5 {
+    color: #fff;
+    background: #da9939;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0;
+    padding: 18px 8px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 2px rgb(196, 246, 167);
+    border-color: #ff9f00;
+    border-radius: 2px;
+}
+
+#order p strong{
+    font-family: cursive;
+    font-style: oblique;
+    text-shadow: 0 0 1px rgba(3, 161, 16, 0.947);
+    margin-left: 10px;
+}
+
+#order p{
+    font-family:serif
+}
+
+
+
+/*------  Product details    --------*/
+
+.order-rem{
+    background-color: #fb641b;
+    font-size: 20px;
+    box-shadow: 0 0 5px 0px red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+/*------ Total Ammount details    --------*/
+
+.order-am{
+    color: #fff;
+    font-family: cursive;
+    background-color: #fb641b;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0px red;
+}
+
+.order-n{
+    background-color: #bffd73;
+    border: 5px;
+    width: 25px;
+    border: none;
+    box-shadow: 0 0 2px 0 red;
+}
+.order-p{
+    background-color: #ef6a6a;
+    border: 5px;
+    width: 25px;
+    border: none;
+    box-shadow: 0 0 2px 0 rgb(87, 240, 113);
+}

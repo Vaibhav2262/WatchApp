@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+<!-- Main start-->
+<div class="row mt-5 ">
+    {% for x in products %}
+    <div class="col-md-4 pimage">
+        <img class="pimage-1" src="{{x.pimage.url}}" alt="" width="100%" height="">
+    </div>
+    <div class="col-md-4 pdetails ms-2 ">
+        <p class="pname"><strong>&nbsp;&nbsp;</strong>{{x.name}} </p>
+        <p class="pprice"><strong> &nbsp;&nbsp;</strong>₹ {{x.price}}</p>
+        {% if x.cat == 1 %}
+        <p><strong>Category : &nbsp;&nbsp;</strong>Men Watch</p>
+        {% elif x.cat == 2 %}
+        <p><strong>Category : &nbsp;&nbsp;</strong>Women Watch</p>
+        {% elif x.cat == 3 %}
+        <p><strong>Category : &nbsp;&nbsp;</strong>Children Watch</p>
+        {% elif x.cat == 4 %}
+        <p><strong>Category : &nbsp;&nbsp;</strong>stylish Watch</p>
+        {% elif x.cat == 5 %}
+        <p><strong>Category : &nbsp;&nbsp;</strong>Sport</p>
+        {% else %}
+        <p><strong>Category : &nbsp;&nbsp;</strong>Men Watch</p>
+        {% endif %}
+        <p class="pspes">Specifications :&nbsp;&nbsp;</p>
+        <p class="ms-5">&nbsp;&nbsp;{{x.pdetails}}</p>
+        <br>
+        <a href="/addtocart/{{x.id}}"><button class="acart mb-2 ms-3"><i class="fa-brands fa-opencart">&nbsp;</i>Add to
+                Cart</button></a>&nbsp;
+        <a href="/viewcart"><button class="vcart mb-2"><i class="fa-solid fa-bolt"></i> &nbsp;View
+                Cart</button></a>&nbsp;
+        <!-- <a href="/"><button class="mcart">Shop More</button></a>&nbsp; -->
+
+        {% if success %}
+        <div class="alert alert-success">
+            {{success}}
+        </div>
+        {% endif %}
+        
+        {% if msg %}
+        <div class="alert alert-danger">
+            {{msg}}
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+<!-- Main end-->
+
+{% endblock 'main' %}

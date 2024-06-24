@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+
+
+
+<div class="main">
+    <!-- Filter Section -->
+
+    <div class="row">
+        <div class="col-md-2 bg-light fbody mt-3 ">
+            <p><strong>Filter by category</strong></p>
+            <hr>
+            <p><a href="/" class="anchor">All</a></p>
+            <p><a href="/catfilter/1" class="anchor">By Men Watch</a></p>
+            <p><a href="/catfilter/2" class="anchor">By Women Watch</a></p>
+            <p><a href="/catfilter/3" class="anchor">By Childrean Watch</a></p>
+            <p><a href="/catfilter/4" class="anchor">By Stylish</a></p>
+            <p><a href="/catfilter/5" class="anchor">By Sports</a></p>
+            <p><a href="/catfilter/6" class="anchor">By Wall Watch</a></p>
+            <p><strong>Filter by Price Range</strong></p>
+            <hr>
+            <form action="/range">
+                <div class="mb-3">
+                    <input type="number" name="min" class="form-control opacity-75 b " id="input1"
+                        placeholder="Min Value">
+                </div><!-- Minimum Value-->
+                <div class="mb-3">
+                    <input type="number" name="max" class="form-control opacity-75 b" id="input2"
+                        placeholder="Max Value">
+                </div><!-- Maximum value -->
+                <div class="mb-3 ">
+                    <input type="submit" class="btn byn-warning fw-semibold button " value="Filter">
+                </div>
+            </form>
+            <p><strong>Sort by Price</strong></p>
+            <hr>
+            <p><a href="/sort/0" class="anchor">Low to High</a></p>
+            <p><a href="/sort/1" class="anchor">High to Low</a></p>
+           
+        </div>
+
+        <!--------------- filter end-------------------->
+
+        <div class="col-md-8 ms-5  ">
+            <div class="row ">
+                {% for x in products %}
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="{{x.pimage.url}}" class="card-img-top" alt="Watch 1" width="100%" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title">{{x.name}}</h5>
+                            <p class="card-title">Rs.{{x.price}}</p>
+                            {% if x.cat == 1 %}
+                            <p class="card-text">Men Watch</p>
+                            {% elif x.cat == 2 %}
+                            <p class="card-text">Women Watch</p>
+                            {% elif x.cat == 3 %}
+                            <p class="card-text">Childran</p>
+                            {% elif x.cat == 4 %}
+                            <p class="card-text">Stylish</p>
+                            {% elif x.cat == 5 %}
+                            <p class="card-text">Sports</p>
+                            {% else %}
+                            <p class="card-text">Wall Watch</p>
+                            {% endif %}
+                            <a href="/pdetails/{{x.id}}" class="btn btn-primary">See Details</a>
+                        </div>
+                    </div>
+                </div> <!-- Product 1-->
+                {% endfor %}
+            </div><!-- row end-->
+
+        </div> <!-- col end -->
+
+    </div><!--row end -->
+
+</div><!-- container end-->
+
+
+<!------------------ Main start end------------------>
+
+
+
+{% endblock 'main' %}

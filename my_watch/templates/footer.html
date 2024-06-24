@@ -1,0 +1,51 @@
+{% load static %}
+
+<section id="footer" class="mt-2">
+    <img src="static/images/wave2.png" alt="" class="footer-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 footer-box">
+                <img src="assets/box-3-nav.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae est aspernatur rem assumenda
+                    nam asperiores consequuntur blanditiis porro ut voluptatibus.</p>
+            </div>
+            <div class="col-md-4 footer-box" id="contact">
+                <p><b>Contact Us</b></p>
+                <p><i class="bi bi-geo-alt"></i>World Hart Center, Nothing Universe</p>
+                <p><i class="bi bi-voicemail"></i>+1 0000 000 000</p>
+                <p><i class="bi bi-envelope-heart"></i>xyz@gmail.com</p>
+            </div>
+            <div class="col-md-4 footer-box">
+                <!------------- Social Media section----------------->
+                <section id="social-media">
+                    <div class="container text-center">
+                        <p><b>Find us on social media</b></p>
+                    </div>
+                    <div class="social-icons text-center">
+                        <a href="#"><img src="{% static 'images/facebook-icon.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'images/instagram-icon.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'images/twitter-icon.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'images/whatsapp-icon.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'images/linkedin-icon.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'images/snapchat-icon.png' %}" alt=""></a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> <i class="bi bi-alipay"></i>&nbsp;&nbsp;Website Crafted by <i Class="b">ⓥ ⓐ ⓘ ⓑ ⓗ ⓐ
+                ⓥ</i></p>
+    </div>
+</section>
+
+<script src="smooth-scroll.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+<script src="{% static 'asset/js/popper.min.js' %}"></script>
+<script src="{% static 'asset/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>

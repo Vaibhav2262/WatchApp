@@ -1,0 +1,73 @@
+.pimage {
+    box-shadow: 0 1px 1px 2px rgba(220, 221, 219, 0.825);
+
+}
+
+.pdetails {
+    box-shadow: 0 1px 1px 2px rgba(220, 221, 219, 0.825);
+    
+}
+
+.pname {
+    font-size: 1.5rem !important;
+    line-height: 2.5rem !important;
+    letter-spacing: .72px;
+    font-family: redhatdisplay, sans-serif !important;
+    font-weight: 500 !important;
+    color: #000;
+    opacity: 1;
+}
+
+.pimage-1 {
+    margin: 10px 10px 10px 2px;
+}
+
+.pprice {
+    color: #000;
+    font-weight: 500;
+    margin-right: 6px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+
+}
+
+.pspes {
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+}
+
+.vcart {
+    background-color: #ff9f00;
+    color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0;
+    padding: 18px 8px;
+    border-radius: 2px;
+    width: 40%;
+    box-shadow: 0 1px 1px 2px rgb(196, 246, 167);
+    border-color: #ff9f00;
+}
+
+.acart {
+    color: #fff;
+    background: #fb641b;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0;
+    padding: 18px 8px;
+    border-radius: 2px;
+    width: 40%;
+    box-shadow: 0 1px 1px 2px rgb(196, 246, 167);
+    border-color: #ff9f00;
+}
+
+.mcart {
+    color: #fff;
+    background: #fb641b;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0;
+    padding: 18px 8px;
+    border-radius: 2px;
+    width: 25%;
+    box-shadow: 0 1px 1px 2px rgb(196, 246, 167);
+    border-color: #ff9f00;
+}
